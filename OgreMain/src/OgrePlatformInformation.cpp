@@ -157,7 +157,7 @@ namespace Ogre {
         result._ecx = CPUInfo[2];
         result._edx = CPUInfo[3];
         return result._eax;
-#elif (OGRE_COMPILER == OGRE_COMPILER_GNUC || OGRE_COMPILER == OGRE_COMPILER_CLANG) && OGRE_PLATFORM != OGRE_PLATFORM_EMSCRIPTEN && __OGRE_HAVE_SSE
+#elif (OGRE_COMPILER == OGRE_COMPILER_GNUC || OGRE_COMPILER == OGRE_COMPILER_CLANG) && OGRE_PLATFORM != OGRE_PLATFORM_EMSCRIPTEN && 0
         #if OGRE_ARCH_TYPE == OGRE_ARCHITECTURE_64
         __asm__
         (

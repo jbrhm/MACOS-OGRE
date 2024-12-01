@@ -43,7 +43,7 @@ if (APPLE AND NOT ANDROID)
   endif()
 
   if (NOT CMAKE_OSX_ARCHITECTURES)
-    set(CMAKE_OSX_ARCHITECTURES "x86_64" CACHE STRING "") # target the common case
+    set(CMAKE_OSX_ARCHITECTURES "arm64" CACHE STRING "") # target the common case
   endif()
 
   # otherwise apple defines a macro named check that conflicts with boost
